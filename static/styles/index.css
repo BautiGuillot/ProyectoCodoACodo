@@ -33,17 +33,17 @@ nav ul li a {
 }
 
 main {
-    display: flex;
-    justify-content: space-between;
     padding: 20px;
 }
 
 #productos {
-    flex: 70%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .producto {
-    margin-bottom: 30px;
+    width: calc(25% - 40px); /* 25% para que haya 4 productos por fila, 40px para el espacio entre productos */
+    margin: 20px;
     padding: 20px;
     border: 1px solid #ccc;
 }
@@ -86,4 +86,12 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px;
+}
+
+/* CSS para ajustar el tamaño de las imágenes del carrusel sin estirarlas y hacerlas más pequeñas */
+.carousel-item img {
+    max-width: 200px; /* Ajusta el valor según sea necesario */
+    max-height: 150px; /* Ajusta el valor según sea necesario */
+    width: auto;
+    height: auto;
 }
