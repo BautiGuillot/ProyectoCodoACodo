@@ -100,6 +100,11 @@ img{
     ESTILOS: Headerhm
 ==================================*/
 
+.logo{
+    width: 35%;
+    border-radius: 5em;
+}
+
 .header-menu-movil{
     display: none;
 }
@@ -107,17 +112,17 @@ img{
 
 .hm-header{
     position: relative;
-    height: 64px;
+    height: auto;
     background: #fff;
     line-height: 64px;
-    -webkit-transition: all .6s ease-in-out;
-    -moz-transition: all .6s ease-in-out;
-    -ms-transition: all .6s ease-in-out;
-    -o-transition: all .6s ease-in-out;
-    transition: all .6s ease-in-out;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
     box-sizing: border-box;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .hm-header .container{
     height: 100%;
@@ -139,6 +144,8 @@ img{
     height: 100%;
     justify-content: space-between;
     align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .header-menu .hm-logo{
@@ -196,8 +203,7 @@ img{
 .hm-banner{
     position: relative;
     width: 100%;
-    height: 600px;
-    min-height: 600px;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -213,6 +219,10 @@ img{
 }
 
 .hm-banner .img-banner{
+    height: 100%;
+}
+
+.banner-img{
     height: 100%;
 }
 
