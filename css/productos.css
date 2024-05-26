@@ -214,7 +214,8 @@ img {
 
 .productos-container {
   padding: 60px 0px;
-  margin: 30px;
+  
+  background: var(--color-fondo);
 }
 
 .heading-title {
@@ -234,6 +235,7 @@ img {
   font-size: 30px;
   font-weight: 600;
   text-align: center;
+  padding-bottom: 16px;
 }
 
 .heading-title h2::after {
@@ -253,6 +255,7 @@ img {
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   max-width: 2000px;
+  margin: 30px;
 }
 
 .productos-container img {
@@ -267,7 +270,6 @@ img {
   position: relative;
   overflow: hidden;
   background: #fff;
-  border: 5px solid #eef5f9;
   border-radius: 5px;
 }
 
