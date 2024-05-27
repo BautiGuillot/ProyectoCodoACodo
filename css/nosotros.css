@@ -141,7 +141,7 @@ img {
 }
 
 .hm-header.header-fixed {
-  position: fixed;
+  position: sticky;
   width: 100%;
   top: 0;
   left: 0;
@@ -208,20 +208,11 @@ img {
   color: #fff;
 }
 
-/* .section-nosotros {
-  background-color: #f2f2f2;
-  padding-bottom: 100px;
-  padding-top: 50px;
-} */
 
-/* ESTILOS NOSOTROS */
-.fade-up {
-  opacity: 0;
-  transform: translateY(80px);
-  animation: fadeUp 1.5s ease-out forwards;
-}
-
-.contenedor-principal {
+/*  ===========================
+      ESTILOS NOSOTROS
+=============================== */
+.main {
   padding-top: 2rem;
   max-width: 120rem;
   margin: 0 auto;
@@ -230,6 +221,7 @@ img {
 
 .title-container {
   padding-bottom: 20px;
+  
 }
 
 .title-container h2 {
@@ -258,10 +250,6 @@ img {
   padding: 1em 4em 4em;
 }
 
-.nosotros__imagen {
-  grid-row: 1/3;
-}
-
 .nosotros-contenido {
   margin: auto;
   grid-row: 1/2;
@@ -271,6 +259,10 @@ img {
 
 .nosotros-contenido p {
   font-size: 19px;
+}
+
+.nosotros-imagen {
+  grid-row: 1/3;
 }
 
 .contenedor-comprar {
@@ -306,9 +298,20 @@ img {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
 }
 
-.bloque__imagen {
+.bloque-imagen {
   width: 5rem;
   height: 5rem;
   max-width: 100%;
   border-radius: 5px; 
 }
+
+
+/* =========================
+  Animaciones
+============================ */
+.fade-up {
+  opacity: 0;
+  transform: translateY(80px);
+  animation: fadeUp 1.5s ease-out forwards;
+}
+
