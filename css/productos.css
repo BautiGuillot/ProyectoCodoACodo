@@ -1,3 +1,4 @@
+
 :root {
   --color-principal: #ff5a5f;
   --color-primary-hover: #d64246;
@@ -19,7 +20,9 @@
   margin: 0;
 }
 
-/* KEYFRAMES */
+/* ==================================
+          KEYFRAMES
+====================================== */
 @keyframes reveal {
   from {
     opacity: 0;
@@ -39,7 +42,7 @@
 }
 
 /*=================================
-    ESTILOS: GLOBALES
+    Estilos BASE
 ==================================*/
 
 .hm-wrapper {
@@ -72,13 +75,13 @@ img {
   border-style: none;
 }
 
-.contenedor {
+.main {
   max-width: 120rem;
   margin: 0 auto;
 }
 
 /*=================================
-    ESTILOS: Header
+    ESTILOS Header
 ==================================*/
 
 .hm-header {
@@ -174,43 +177,11 @@ img {
   color: #fff;
 }
 
-/*=================================
-    ESTILOS: banner
-==================================*/
-.hm-banner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
 
-.hm-banner a {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 20;
-}
-
-.hm-banner .img-banner {
-  height: 100%;
-}
-
-.banner-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  vertical-align: middle;
-  border-style: none;
-}
 
 /*=================================
-    ESTILOS: PRODUCTOS
+    ESTILOS Seccion Productos
 ==================================*/
-
 
 .productos-container {
   padding: 60px 0px;
@@ -222,12 +193,6 @@ img {
   margin-bottom: 50px;
 }
 
-.fade-up{
-  opacity: 0;
-  transform: translateY(80px);
-  animation: fadeUp 1.5s ease-out forwards;
-
-}
 
 .heading-title h2 {
   color: var(--color-negro);
@@ -273,11 +238,6 @@ img {
   border-radius: 5px;
 }
 
-.grid .producto-item{
-  animation: reveal linear both;
-  animation-timeline: view();
-  animation-range: entry 20% cover 30%;
-}
 
 .grid .producto-item img {
   transition: all 0.3s ease-in;
@@ -301,14 +261,6 @@ img {
 .producto-item {
   padding: 2rem;
 }
-
-/* .grid .producto-item .p-info {
-  padding: 20px 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: calc(100% - 265px);
-} */
 
 .grid .producto-item .p-info h3 {
   font-size: 18px;
@@ -334,25 +286,25 @@ img {
 
 
 
+/* ============================== 
+          ANIMACIONES
+=================================*/
+.fade-up{
+  opacity: 0;
+  transform: translateY(80px);
+  animation: fadeUp 1.5s ease-out forwards;
 
-/* .producto__nombre {
-    font-size: 2rem;
-  }
-  
-  .producto__precio {
-    font-size: 1.5rem;
-    color: var(--secundario);
-  }
-  
-  .producto__nombre,
-  .producto__precio {
-    margin: 1rem 0;
-    text-align: center;
-    line-height: 1.2;
-  } */
+}
+
+.grid .producto-item{
+  animation: reveal linear both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 30%;
+}
+
 
 /*=================================
-    ESTILOS: BOTONES
+    ESTILOS BOTONES
 ==================================*/
 
 .grid .producto-item .p-info .hm-btn {
@@ -381,107 +333,4 @@ img {
   background: var(--color-primary-hover);
 }
 
-/*=================================
-    ESTILOS:FOOTER
-==================================*/
-.container-footer {
-  width: 1122px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
 
-footer {
-  background: #151515;
-  padding: 80px 0px;
-}
-
-footer .foo-row {
-  display: flex;
-  justify-content: space-between;
-}
-
-footer.foo-row .foo-col {
-  width: 50%;
-}
-
-footer .foo-row .foo-col:last-child {
-  margin-left: 50px;
-}
-
-footer .foo-row .foo-col:first-child {
-  margin-right: 50px;
-}
-
-footer .foo-row .foo-col h2 {
-  color: #e3e3e3;
-  line-height: 40px;
-
-  font-size: 33px;
-  font-weight: 500;
-  margin-bottom: 20px;
-}
-
-footer form .f-input {
-  width: 100%;
-  position: relative;
-}
-
-footer form .f-input input {
-  width: 100%;
-  display: block;
-  padding: 16px 30px;
-  background: #2c2b2b;
-  border: none;
-  padding-right: 50px;
-  font-size: 15px;
-  border-radius: 25px;
-  outline: 0;
-  color: #a7a1a1;
-}
-
-footer form .f-input .hm-btn-round {
-  position: absolute;
-  right: 0px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 42px;
-  height: 42px;
-  border: none;
-  font-size: 18px;
-  margin-right: 3px;
-  cursor: pointer;
-}
-
-footer .foo-row .foo-col ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-footer .foo-row .foo-col ul li {
-  width: 50%;
-  margin-bottom: 16px;
-}
-
-footer .foo-row .foo-col ul li a {
-  color: #e3e3e3;
-  font-size: 15px;
-}
-
-footer .foo-row .foo-col ul li a:hover {
-  color: var(--color-principal);
-  text-decoration: underline;
-}
-
-.foo-copy {
-  background: #000000;
-  padding: 40px 0px;
-}
-
-.foo-copy p {
-  text-align: center;
-  color: #e3e3e3;
-  font-size: 14px;
-  font-weight: 300;
-}

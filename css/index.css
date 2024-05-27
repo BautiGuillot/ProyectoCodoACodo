@@ -1,4 +1,3 @@
-
 :root{
     --color-principal: #FF5A5F;
     --color-primary-hover:#d64246;
@@ -129,7 +128,7 @@ img{
 }
 
 .hm-header.header-fixed{
-    position: fixed;
+    position: sticky;
     width: 100%;
     top: 0;
     left: 0;
@@ -540,7 +539,7 @@ footer .foo-row .foo-col ul li a:hover{
 
 
 /*=================================
-    ESTILOS: RESPOIVE
+    ESTILOS: RESPONSIVE
 ==================================*/
 @media screen and (max-width: 1024px){
     .grid-product{

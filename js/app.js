@@ -1,10 +1,13 @@
 
+
+/* Mantiene fija la navbar al scrollear hacia abajo */
 const headerMenu=document.querySelector('.hm-header');
 
 console.log(headerMenu.offsetTop);
 
+
 window.addEventListener('scroll',()=>{
-    if(window.pageYOffset > 80){
+    if(window.scrollY> 80){
         headerMenu.classList.add('header-fixed');
     }else{
         headerMenu.classList.remove('header-fixed');
